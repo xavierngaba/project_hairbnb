@@ -1,0 +1,63 @@
+/**
+ * Listing Embed CSS.
+ *
+ * @since 2.4.0
+ */
+
+/* Title. */
+.listing-embed-heading {
+	margin-bottom: 15px;
+}
+.listing-embed-heading:after {
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.listing-embed-heading .wp-embed-heading {
+	display: inline-block;
+	margin: 0;
+}
+.listing-rating {
+	display: inline-block;
+	font-size: 14px;
+}
+.listing-stars {
+}
+.listing-star {
+	display: inline-flex;
+}
+.listing-star--full:before {
+	content: "";
+	width: 1em;
+	height: 1em;
+	background-size: 1em 1em;
+	background-image: url( "embed-icons/ion-android-star.svg" );
+	text-shadow: -1px -1px 0 #2B2B2B, 1px -1px 0 #2B2B2B, -1px 1px 0 #2B2B2B, 1px 1px 0 #2B2B2B;
+}
+.listing-star--empty:before {
+	content: "";
+	width: 1em;
+	height: 1em;
+	background-size: 1em 1em;
+	background-image: url( "embed-icons/ion-android-star-outline.svg" );
+}
+
+/* Excerpt */
+.wp-embed-excerpt {
+	margin-bottom: 15px;
+}
+
+/* Map */
+.listify-embed-map {
+}
+.listify-embed-map a{
+	display: block;
+}
+.listify-embed-map-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* Hide Comment Icon */
+.wp-embed-meta .wp-embed-comments {
+	display: none;
+}

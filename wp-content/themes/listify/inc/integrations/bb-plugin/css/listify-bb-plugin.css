@@ -1,0 +1,35 @@
+/**
+ * Beaver Builder Page Template.
+ *
+ * @since 2.3.0
+**/
+
+/* Edit Fix */
+@media (min-width: 992px) {
+	html.fl-builder-edit .fl-builder.listify-beaverbuilder #masthead {
+		top: 43px;
+	}
+}
+
+/* Display */
+.fl-builder.listify-beaverbuilder .content-area {
+	margin: 0;
+}
+
+.fl-builder.listify-beaverbuilder #primary {
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+.fl-builder.listify-beaverbuilder #main > article {
+	margin-bottom: 0;
+	box-shadow: none;
+}
+
+/* Magnific PopUp */
+.fl-builder.listify-beaverbuilder .mfp-figure .mfp-close {
+	display: none;
+}
+
+

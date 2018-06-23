@@ -1,0 +1,72 @@
+.listing-entry-company-image {
+	border-width: 3px;
+	border-style: solid;
+	border-color: transparent;
+	overflow: hidden;
+	position: relative;
+
+	a,
+	img {
+		display: block;
+	}
+}
+
+.listing-entry-company-image--type-avatar {
+	border-radius: 50%;
+}
+
+.listing-entry-company-image--single {
+	width: 125px;
+	height: 125px;
+	margin-bottom: 1.5em;
+
+	.job_listing-author & {
+		margin-left: auto;
+		margin-right: auto;
+		width: 105px;
+		height: 105px;
+	}
+}
+
+/* @noflip */
+.listing-entry-company-image__img {
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	transform: translate3d(-55%, -55%, 0);
+  width: 110% !important;
+  height: 110% !important;
+}
+
+.listing-entry-company-image--card {
+	position: absolute;
+	right: 20px;
+	top: 0;
+	width: 60px;
+	height: 60px;
+	z-index: 19;
+	transform: translateY(-50%);
+}
+
+.listing-entry-company-image--card.listing-entry-company-image--type-avatar {
+	z-index: 21;
+}
+
+.listing-entry-company-image__img {
+	max-width: 100%;
+	height: auto;
+}
+
+.listing-entry-company-image--style-square {
+	border-radius: 4px;
+
+	img {
+		border-radius: 4px;
+	}
+}
+
+.listing-entry-company-image--style-circle {
+	border-radius: 50%;
+  /* @see https://gist.github.com/ayamflow/b602ab436ac9f05660d9c15190f4fd7b */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}

@@ -1,0 +1,48 @@
+ul[data-card-columns] {
+	.listing-card {
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		float: left;
+	}
+}
+
+ul[data-card-columns="2"] {
+	.listing-card {
+		width: 100%;
+
+		@include bp(sm) {
+			width: 50%;
+		}
+	}
+}
+
+ul[data-card-columns="3"] {
+	.listing-card {
+		width: 100%;
+
+		@include bp(sm) {
+			width: 50%;
+		}
+
+		@include bp(lg) {
+			width: 33.33333333333333%;
+		}
+	}
+}
+
+.listing-card {
+	opacity: 0;
+	transition: opacity 0.35s ease-in-out 0.15s;
+
+	.listing-cards-anchor--active & {
+		opacity: 1;
+	}
+
+	// Force full width in a sidebar.
+	.widget-area--listing-sidebar & {
+		width: 100% !important;
+	}
+}
